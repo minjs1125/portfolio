@@ -1,12 +1,16 @@
-html,body{margin: 0;padding: 0;font-size: 14px;background-color: #fff;}
-div,ul,li{margin: 0;padding: 0;list-style: none;}
-.clear{clear: both;}
-.clear:after{content: "";display: block;clear: both;}
+@import "base.css";
+
 .wrap{width: 100%;max-width: 1200px;margin: 0 auto;}
-.header{text-align: center;}
-.header>.logo{font-size: 2em; height: 60px;line-height: 60px;float: left;}
-.header>.title{font-size: 2em; height: 60px;line-height: 60px;display: inline-block;}
-.header>.bar{font-size: 2em; height: 60px;line-height: 60px;float: right;}
-.menus{margin-top: 50px;}
-.menus>li{width: 33.33%;float:left; border: 1px solid #ccc;text-align: center;padding: 10px;}
-.board{margin-top: 50px;padding: 20px;border: 1px solid #ccc;}
+
+.top_menu{background-color: #333;color: #fff;}
+.top_menu>ul{float: right;margin-right:1em;}
+.top_menu>ul>li{float: right;padding: 0.5em;}
+
+.top{margin: 1rem 0;font-size: 1.5rem;border-bottom: 1px solid #999;}
+.top>.logo{float: left;margin-left: 1em;}
+.top>.bars{float: right;margin-right: 1em;}
+
+.navs{margin-top: 2rem;border-bottom: 1px solid #999;}
+.navs>li{float: left;width: 25%;margin: 0.5%;border: 1px solid #999;padding: 1rem;text-align: center;border-bottom: 1px solid #fff;}
+
+.copyright{width: 100%;;background-color: #333;color: #fff;text-align: center;padding: 0.5em;position: absolute;bottom: 0;}
