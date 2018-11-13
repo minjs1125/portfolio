@@ -14,14 +14,16 @@
     </header>
     <section>
         <form name="table_form" action="table_res.php" method="get">
-            <table class="w3-table w3-table-all">
+            <!--method="get"은 주소줄로 전송 post라면 전송하지만 보여지지 않음-->
+            <table class="w3-table w3-bordered w3-hoverable">
                 <tr>
                     <td style="width:20%">행 갯수</td>
                     <td>
                         <select name="row" class="w3-select">
-                        <!--name이 변수값-->
+                        <!--name이라는값인 변수명에 값을 담아 전송함-->
                             <? for($i=1; $i<=10; $i++) { ?>
                                 <option value="<? echo $i; ?>"><? echo $i; ?></option>
+                                <!--echo 대신 =-->
                             <? } ?>
                         </select>
                     </td>
